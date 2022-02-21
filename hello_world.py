@@ -9,8 +9,8 @@ class HelloWorld(unittest.TestCase):
     #metodo de test fixture, ejecuta todo lo necesario antes de hacer una prueba
     #prepara el entorno de la prueba misma
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path="./chromedriver_win32/chromedriver.exe")
-        driver=self.driver #colocamos self.driver en la variable driver para no tener que poner self.driver todas las veces
+        self.driver = webdriver.Chrome(executable_path = r'./chromedriver_win32/chromedriver.exe') 
+        driver = self.driver #colocamos self.driver en la variable driver para no tener que poner self.driver todas las veces
         driver.implicitly_wait(10) #para que espere 10seg antes de realizar la siguiente accion(las acciones estan en nuestro caso de prueba unitaria)
 
     #nuestro modulo de prueba o prueba unitaria, debe iniciar con test para que la identifique el test runner

@@ -6,7 +6,7 @@ from selenium import webdriver
 
 class HelloWorld(unittest.TestCase):
     
-    @classmethod
+    @classmethod # Para que corran las pruebas en una sola ventana 
     def setUpClass(cls):
         cls.driver = webdriver.Chrome(executable_path="./chromedriver_win32/chromedriver.exe")
         driver=cls.driver 
@@ -25,4 +25,4 @@ class HelloWorld(unittest.TestCase):
 
 
 if __name__=="__main__":       
-    unittest.main(verbosity=2, testRunner= HTMLTestRunner(output="reportes",report_name="Hello-world-report"))
+    unittest.main(verbosity=2, testRunner= HTMLTestRunner(output="reportes",report_name="Hello-world-report3"))

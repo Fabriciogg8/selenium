@@ -18,6 +18,7 @@ class HelloWorld(unittest.TestCase):
         driver=self.driver
         driver.get('https://www.platzi.com')
 
+    # Visitamos una segunda página web
     def test_visit_wikipedi(self):
         self.driver.get('https://www.wikipedia.org')
 
